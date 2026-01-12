@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>求职 - threetwoa - 全栈程序员</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .neobrutal-shadow {
+        box-shadow: 8px 8px 0px 0px #000;
+      }
+
+      .neobrutal-shadow-sm {
+        box-shadow: 4px 4px 0px 0px #000;
+      }
+
+      .neobrutal-shadow-lg {
+        box-shadow: 12px 12px 0px 0px #000;
+      }
+
+      .neobrutal-border {
+        border: 4px solid #000;
+      }
+
+      .neobrutal-border-sm {
+        border: 2px solid #000;
+      }
+
+      .hover-lift:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 12px 12px 0px 0px #000;
+      }
+
+      .transition-neo {
+        transition: all 0.2s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-yellow-100 min-h-screen">
+    <!-- Navigation -->
+    <nav
+      class="bg-pink-400 neobrutal-border neobrutal-shadow-sm sticky top-0 z-50"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-2xl font-bold text-black">
+            <i class="fas fa-code mr-2"></i>threetwoa
+          </div>
+          <div class="space-x-4">
+            <a
+              href="index.html"
+              class="bg-yellow-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2 font-bold text-black hover-lift transition-neo inline-block"
+            >
+              首页
+            </a>
+            <a
+              href="about.html"
+              class="bg-blue-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2 font-bold text-black hover-lift transition-neo inline-block"
+            >
+              关于
+            </a>
+            <a
+              href="career.html"
+              class="bg-green-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2 font-bold text-black hover-lift transition-neo inline-block"
+            >
+              求职
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-16">
+      <div class="bg-green-300 neobrutal-border neobrutal-shadow-lg p-8 mb-8">
+        <h1 class="text-6xl font-black text-black mb-4">
+          <i class="fas fa-briefcase mr-3"></i>求职信息
+        </h1>
+        <p class="text-2xl font-bold text-black">
+          寻找新的职业机会 · 期待与优秀团队合作
+        </p>
+      </div>
+    </section>
+
+    <!-- Job Preferences -->
+    <section class="container mx-auto px-6 py-8">
+      <h2 class="text-4xl font-black text-black mb-8 text-center">
+        <i class="fas fa-search mr-3"></i>求职意向
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-user-tie text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-4">期望职位</h3>
+          <div class="space-y-3">
+            <div
+              class="bg-yellow-300 neobrutal-border-sm neobrutal-shadow-sm p-3"
+            >
+              <p class="font-bold text-black">全栈开发工程师</p>
+            </div>
+            <div
+              class="bg-blue-300 neobrutal-border-sm neobrutal-shadow-sm p-3"
+            >
+              <p class="font-bold text-black">高级前端工程师</p>
+            </div>
+            <div
+              class="bg-purple-300 neobrutal-border-sm neobrutal-shadow-sm p-3"
+            >
+              <p class="font-bold text-black">技术负责人</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-dollar-sign text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-4">期望薪资</h3>
+          <div
+            class="bg-green-300 neobrutal-border-sm neobrutal-shadow-sm p-6 text-center"
+          >
+            <p class="text-3xl font-black text-black mb-2">面议</p>
+            <p class="text-lg text-black">根据岗位职责和公司规模协商</p>
+          </div>
+        </div>
+        <div class="bg-white neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-map-marker-alt text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-4">工作地点</h3>
+          <div class="space-y-3">
+            <div
+              class="bg-cyan-300 neobrutal-border-sm neobrutal-shadow-sm p-3"
+            >
+              <p class="font-bold text-black">
+                <i class="fas fa-check-circle mr-2"></i>北京
+              </p>
+            </div>
+            <div
+              class="bg-orange-300 neobrutal-border-sm neobrutal-shadow-sm p-3"
+            >
+              <p class="font-bold text-black">
+                <i class="fas fa-check-circle mr-2"></i>上海
+              </p>
+            </div>
+            <div
+              class="bg-pink-300 neobrutal-border-sm neobrutal-shadow-sm p-3"
+            >
+              <p class="font-bold text-black">
+                <i class="fas fa-check-circle mr-2"></i>深圳
+              </p>
+            </div>
+            <div class="bg-red-300 neobrutal-border-sm neobrutal-shadow-sm p-3">
+              <p class="font-bold text-black">
+                <i class="fas fa-check-circle mr-2"></i>远程工作
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-clock text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-4">工作类型</h3>
+          <div class="space-y-3">
+            <div
+              class="bg-yellow-300 neobrutal-border-sm neobrutal-shadow-sm p-3"
+            >
+              <p class="font-bold text-black">
+                <i class="fas fa-briefcase mr-2"></i>全职
+              </p>
+            </div>
+            <div
+              class="bg-blue-300 neobrutal-border-sm neobrutal-shadow-sm p-3"
+            >
+              <p class="font-bold text-black">
+                <i class="fas fa-laptop mr-2"></i>远程
+              </p>
+            </div>
+            <div
+              class="bg-green-300 neobrutal-border-sm neobrutal-shadow-sm p-3"
+            >
+              <p class="font-bold text-black">
+                <i class="fas fa-handshake mr-2"></i>兼职/顾问
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Experience Summary -->
+    <section class="container mx-auto px-6 py-8">
+      <h2 class="text-4xl font-black text-black mb-8 text-center">
+        <i class="fas fa-star mr-3"></i>核心优势
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-cyan-300 neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-code text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">技术能力</h3>
+          <ul class="space-y-2 text-black font-semibold">
+            <li><i class="fas fa-check mr-2"></i>5+ 年全栈开发经验</li>
+            <li><i class="fas fa-check mr-2"></i>精通前后端技术栈</li>
+            <li><i class="fas fa-check mr-2"></i>丰富的项目实战经验</li>
+            <li><i class="fas fa-check mr-2"></i>持续学习新技术</li>
+          </ul>
+        </div>
+        <div class="bg-orange-300 neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-users text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">团队协作</h3>
+          <ul class="space-y-2 text-black font-semibold">
+            <li><i class="fas fa-check mr-2"></i>优秀的沟通能力</li>
+            <li><i class="fas fa-check mr-2"></i>敏捷开发经验</li>
+            <li><i class="fas fa-check mr-2"></i>代码审查和指导</li>
+            <li><i class="fas fa-check mr-2"></i>跨部门协作</li>
+          </ul>
+        </div>
+        <div class="bg-red-300 neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-lightbulb text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">解决问题</h3>
+          <ul class="space-y-2 text-black font-semibold">
+            <li><i class="fas fa-check mr-2"></i>快速定位问题</li>
+            <li><i class="fas fa-check mr-2"></i>创新解决方案</li>
+            <li><i class="fas fa-check mr-2"></i>性能优化经验</li>
+            <li><i class="fas fa-check mr-2"></i>系统架构设计</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Download -->
+    <section class="container mx-auto px-6 py-8">
+      <div class="bg-black text-white neobrutal-border neobrutal-shadow-lg p-8">
+        <div class="text-center mb-8">
+          <div class="text-6xl mb-4">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <h2 class="text-4xl font-black mb-4">简历下载</h2>
+          <p class="text-xl mb-6">下载我的完整简历，了解更多详细信息</p>
+          <a
+            href="#"
+            class="bg-yellow-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-8 py-4 font-bold text-xl hover-lift transition-neo inline-block"
+          >
+            <i class="fas fa-download mr-2"></i>下载简历 (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I'm Looking For -->
+    <section class="container mx-auto px-6 py-8">
+      <h2 class="text-4xl font-black text-black mb-8 text-center">
+        <i class="fas fa-heart mr-3"></i>期望的工作环境
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white neobrutal-border neobrutal-shadow p-6">
+          <h3 class="text-2xl font-bold text-black mb-4">
+            <i class="fas fa-building mr-2"></i>公司文化
+          </h3>
+          <ul class="space-y-3 text-black">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+              <span>开放包容的工作氛围，鼓励创新和尝试</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+              <span>重视技术成长，提供学习和培训机会</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+              <span>扁平化管理，高效的决策流程</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+              <span>团队协作，互相学习和支持</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white neobrutal-border neobrutal-shadow p-6">
+          <h3 class="text-2xl font-bold text-black mb-4">
+            <i class="fas fa-tasks mr-2"></i>工作内容
+          </h3>
+          <ul class="space-y-3 text-black">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+              <span>有挑战性的技术项目，能够持续成长</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+              <span>参与产品设计和架构决策</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+              <span>使用现代技术栈，保持技术前沿</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+              <span>有机会接触全栈开发，不局限于单一领域</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Availability -->
+    <section class="container mx-auto px-6 py-8">
+      <div
+        class="bg-purple-300 neobrutal-border neobrutal-shadow-lg p-8 text-center"
+      >
+        <h2 class="text-4xl font-black text-black mb-6">
+          <i class="fas fa-calendar-check mr-3"></i>到岗时间
+        </h2>
+        <div
+          class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-6 inline-block"
+        >
+          <p class="text-3xl font-black text-black mb-2">随时到岗</p>
+          <p class="text-lg text-black">或根据双方协商确定</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact for Job -->
+    <section class="container mx-auto px-6 py-16">
+      <div
+        class="bg-black text-white neobrutal-border neobrutal-shadow-lg p-8 text-center"
+      >
+        <h2 class="text-4xl font-black mb-6">
+          <i class="fas fa-paper-plane mr-3"></i>期待您的联系
+        </h2>
+        <p class="text-xl mb-8">
+          如果您有合适的职位机会，欢迎通过以下方式联系我
+        </p>
+        <div class="flex justify-center gap-6 flex-wrap">
+          <a
+            href="mailto:threetwoa@example.com?subject=职位邀请"
+            class="bg-yellow-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fas fa-envelope mr-2"></i>发送邮件
+          </a>
+          <a
+            href="tel:+8613800000000"
+            class="bg-green-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fas fa-phone mr-2"></i>电话联系
+          </a>
+          <a
+            href="https://linkedin.com/in/threetwoa"
+            class="bg-blue-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fab fa-linkedin mr-2"></i>LinkedIn
+          </a>
+          <a
+            href="https://github.com/threetwoa"
+            class="bg-cyan-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a>
+        </div>
+        <div
+          class="mt-8 bg-yellow-300 text-black neobrutal-border-sm neobrutal-shadow-sm p-4 inline-block"
+        >
+          <p class="font-bold">
+            <i class="fas fa-info-circle mr-2"></i>
+            通常会在 24 小时内回复您的消息
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-400 neobrutal-border-t neobrutal-shadow-sm py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-black font-bold">
+          <i class="fas fa-heart text-red-600"></i> Made with passion by
+          threetwoa
+        </p>
+        <div class="mt-4 space-x-4">
+          <a href="index.html" class="text-black font-semibold hover:underline">
+            <i class="fas fa-home mr-1"></i>首页
+          </a>
+          <a href="about.html" class="text-black font-semibold hover:underline">
+            <i class="fas fa-user mr-1"></i>关于
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

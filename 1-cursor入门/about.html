@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>关于 threetwoA - 全栈程序员</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .neobrutal-shadow {
+        box-shadow: 8px 8px 0px 0px #000;
+      }
+
+      .neobrutal-shadow-sm {
+        box-shadow: 4px 4px 0px 0px #000;
+      }
+
+      .neobrutal-shadow-lg {
+        box-shadow: 12px 12px 0px 0px #000;
+      }
+
+      .neobrutal-border {
+        border: 4px solid #000;
+      }
+
+      .neobrutal-border-sm {
+        border: 2px solid #000;
+      }
+
+      .hover-lift:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 12px 12px 0px 0px #000;
+      }
+
+      .transition-neo {
+        transition: all 0.2s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-yellow-100 min-h-screen">
+    <!-- Navigation -->
+    <nav
+      class="bg-pink-400 neobrutal-border neobrutal-shadow-sm sticky top-0 z-50"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-2xl font-bold text-black">
+            <i class="fas fa-code mr-2"></i>threetwoA
+          </div>
+          <div class="space-x-4">
+            <a
+              href="index.html"
+              class="bg-yellow-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2 font-bold text-black hover-lift transition-neo inline-block"
+            >
+              首页
+            </a>
+            <a
+              href="about.html"
+              class="bg-blue-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2 font-bold text-black hover-lift transition-neo inline-block"
+            >
+              关于
+            </a>
+            <a
+              href="career.html"
+              class="bg-green-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2 font-bold text-black hover-lift transition-neo inline-block"
+            >
+              求职
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-16">
+      <div class="bg-green-300 neobrutal-border neobrutal-shadow-lg p-8 mb-8">
+        <h1 class="text-6xl font-black text-black mb-4">
+          <i class="fas fa-user-circle mr-3"></i>关于我
+        </h1>
+        <p class="text-2xl font-bold text-black">
+          全栈程序员 · 技术爱好者 · 问题解决者
+        </p>
+      </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="container mx-auto px-6 py-8">
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="bg-white neobrutal-border neobrutal-shadow p-8">
+          <h2 class="text-3xl font-black text-black mb-6">
+            <i class="fas fa-lightbulb mr-3"></i>我的故事
+          </h2>
+          <p class="text-lg text-black mb-4 leading-relaxed">
+            我是
+            <strong>threetwoA</strong
+            >，一名充满热情的全栈程序员。我热爱将创意转化为现实，通过代码构建优雅且高效的数字化解决方案。
+          </p>
+          <p class="text-lg text-black mb-4 leading-relaxed">
+            从前端到后端，从移动应用到云服务，我享受全栈开发的每一个环节。我相信技术不仅仅是工具，更是连接想法与现实的桥梁。
+          </p>
+          <p class="text-lg text-black leading-relaxed">
+            在我的职业生涯中，我致力于学习新技术、解决复杂问题，并创造对用户有价值的应用。
+          </p>
+          <p class="text-lg text-black mb-4 leading-relaxed">
+            我是一个全栈程序员，对技术充满热情。编程不仅是我的职业，更是我的兴趣与生活的一部分。<br />
+            我喜欢用代码解决实际问题，享受从无到有构建产品的过程。每天探索新技术、优化用户体验和提升系统性能，是我持续追求的目标。
+          </p>
+          <p class="text-lg text-black leading-relaxed">
+            除了编程之外，我也热爱与团队协作、分享经验和学习成长。我相信持续学习和开放思维能让我不断进步，在追逐梦想的道路上不断创造更多可能。
+          </p>
+        </div>
+        <div class="bg-purple-300 neobrutal-border neobrutal-shadow p-8">
+          <h2 class="text-3xl font-black text-black mb-6">
+            <i class="fas fa-graduation-cap mr-3"></i>专业背景
+          </h2>
+          <div class="space-y-4">
+            <div
+              class="bg-yellow-300 neobrutal-border-sm neobrutal-shadow-sm p-4"
+            >
+              <h3 class="text-xl font-bold text-black mb-2">
+                <i class="fas fa-code mr-2"></i>全栈开发
+              </h3>
+              <p class="text-black">5+ 年全栈开发经验</p>
+            </div>
+            <div
+              class="bg-blue-300 neobrutal-border-sm neobrutal-shadow-sm p-4"
+            >
+              <h3 class="text-xl font-bold text-black mb-2">
+                <i class="fas fa-project-diagram mr-2"></i>系统架构
+              </h3>
+              <p class="text-black">设计和实现可扩展的系统架构</p>
+            </div>
+            <div
+              class="bg-pink-300 neobrutal-border-sm neobrutal-shadow-sm p-4"
+            >
+              <h3 class="text-xl font-bold text-black mb-2">
+                <i class="fas fa-users mr-2"></i>团队协作
+              </h3>
+              <p class="text-black">敏捷开发和跨职能团队合作</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Detail -->
+    <section class="container mx-auto px-6 py-8">
+      <h2 class="text-4xl font-black text-black mb-8 text-center">
+        <i class="fas fa-cogs mr-3"></i>技术专长
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-cyan-300 neobrutal-border neobrutal-shadow p-6">
+          <h3 class="text-2xl font-bold text-black mb-4">
+            <i class="fas fa-laptop-code mr-2"></i>前端技术
+          </h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">React</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Vue.js</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">TypeScript</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Next.js</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Tailwind CSS</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Sass/SCSS</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-orange-300 neobrutal-border neobrutal-shadow p-6">
+          <h3 class="text-2xl font-bold text-black mb-4">
+            <i class="fas fa-server mr-2"></i>后端技术
+          </h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Node.js</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Python</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Express</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">FastAPI</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">MongoDB</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">PostgreSQL</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-red-300 neobrutal-border neobrutal-shadow p-6">
+          <h3 class="text-2xl font-bold text-black mb-4">
+            <i class="fas fa-cloud mr-2"></i>DevOps & 云服务
+          </h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Docker</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Kubernetes</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">AWS</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Azure</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">CI/CD</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Git</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-green-300 neobrutal-border neobrutal-shadow p-6">
+          <h3 class="text-2xl font-bold text-black mb-4">
+            <i class="fas fa-mobile-alt mr-2"></i>移动开发
+          </h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">React Native</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Flutter</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Firebase</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">App Store</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">Play Store</p>
+            </div>
+            <div
+              class="bg-white neobrutal-border-sm neobrutal-shadow-sm p-3 text-center"
+            >
+              <p class="font-bold text-black">PWA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="container mx-auto px-6 py-8">
+      <div class="bg-black text-white neobrutal-border neobrutal-shadow-lg p-8">
+        <h2 class="text-4xl font-black mb-6 text-center">
+          <i class="fas fa-quote-left mr-3"></i>开发理念
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="bg-yellow-300 text-black neobrutal-border-sm neobrutal-shadow-sm p-6"
+          >
+            <div class="text-4xl mb-4">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">创新思维</h3>
+            <p class="text-sm">不断探索新技术，寻找最佳解决方案</p>
+          </div>
+          <div
+            class="bg-green-300 text-black neobrutal-border-sm neobrutal-shadow-sm p-6"
+          >
+            <div class="text-4xl mb-4">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">用户体验</h3>
+            <p class="text-sm">以用户为中心，创造直观易用的产品</p>
+          </div>
+          <div
+            class="bg-blue-300 text-black neobrutal-border-sm neobrutal-shadow-sm p-6"
+          >
+            <div class="text-4xl mb-4">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">持续改进</h3>
+            <p class="text-sm">代码质量至上，追求卓越性能</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="container mx-auto px-6 py-8">
+      <h2 class="text-4xl font-black text-black mb-8 text-center">
+        <i class="fas fa-briefcase mr-3"></i>工作经历
+      </h2>
+      <div class="space-y-6">
+        <div
+          class="bg-white neobrutal-border neobrutal-shadow p-6 hover-lift transition-neo"
+        >
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-bold text-black mb-2">
+                <i class="fas fa-building mr-2"></i>高级全栈工程师
+              </h3>
+              <p class="text-lg text-black font-semibold">
+                科技公司 · 2020 - 至今
+              </p>
+            </div>
+            <div
+              class="bg-pink-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2"
+            >
+              <p class="font-bold text-black">当前</p>
+            </div>
+          </div>
+          <ul class="space-y-2 text-black">
+            <li>
+              <i class="fas fa-check-circle text-green-600 mr-2"></i
+              >负责核心产品的全栈开发和架构设计
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-green-600 mr-2"></i
+              >带领团队完成多个大型项目的交付
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-green-600 mr-2"></i
+              >优化系统性能，提升用户体验
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-white neobrutal-border neobrutal-shadow p-6 hover-lift transition-neo"
+        >
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-bold text-black mb-2">
+                <i class="fas fa-laptop mr-2"></i>全栈开发工程师
+              </h3>
+              <p class="text-lg text-black font-semibold">
+                互联网公司 · 2018 - 2020
+              </p>
+            </div>
+          </div>
+          <ul class="space-y-2 text-black">
+            <li>
+              <i class="fas fa-check-circle text-green-600 mr-2"></i
+              >开发并维护多个Web应用和API服务
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-green-600 mr-2"></i
+              >参与移动应用的开发和发布
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-green-600 mr-2"></i
+              >与设计师和产品经理紧密合作
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bg-white neobrutal-border neobrutal-shadow p-6 hover-lift transition-neo"
+        >
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-bold text-black mb-2">
+                <i class="fas fa-code mr-2"></i>前端开发工程师
+              </h3>
+              <p class="text-lg text-black font-semibold">
+                创业公司 · 2016 - 2018
+              </p>
+            </div>
+          </div>
+          <ul class="space-y-2 text-black">
+            <li>
+              <i class="fas fa-check-circle text-green-600 mr-2"></i
+              >从零开始构建前端架构
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-green-600 mr-2"></i
+              >实现响应式设计和交互功能
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-green-600 mr-2"></i
+              >学习并应用最新的前端技术
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto px-6 py-16">
+      <div
+        class="bg-black text-white neobrutal-border neobrutal-shadow-lg p-8 text-center"
+      >
+        <h2 class="text-4xl font-black mb-6">
+          <i class="fas fa-handshake mr-3"></i>让我们一起合作
+        </h2>
+        <p class="text-xl mb-8">如果你有项目想法或想要讨论技术，欢迎联系我</p>
+        <div class="flex justify-center gap-6 flex-wrap">
+          <a
+            href="mailto:threetwoA@example.com"
+            class="bg-yellow-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fas fa-envelope mr-2"></i>发送邮件
+          </a>
+          <a
+            href="https://github.com/threetwoA"
+            class="bg-green-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/threetwoA"
+            class="bg-blue-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fab fa-linkedin mr-2"></i>LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-400 neobrutal-border-t neobrutal-shadow-sm py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-black font-bold">
+          <i class="fas fa-heart text-red-600"></i> Made with passion by
+          threetwoA
+        </p>
+        <a
+          href="index.html"
+          class="text-black font-semibold hover:underline mt-2 inline-block"
+        >
+          <i class="fas fa-arrow-left mr-2"></i>返回首页
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

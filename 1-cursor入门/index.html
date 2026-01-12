@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>threetwoA - 全栈程序员</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .neobrutal-shadow {
+        box-shadow: 8px 8px 0px 0px #000;
+      }
+
+      .neobrutal-shadow-sm {
+        box-shadow: 4px 4px 0px 0px #000;
+      }
+
+      .neobrutal-shadow-lg {
+        box-shadow: 12px 12px 0px 0px #000;
+      }
+
+      .neobrutal-border {
+        border: 4px solid #000;
+      }
+
+      .neobrutal-border-sm {
+        border: 2px solid #000;
+      }
+
+      .hover-lift:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 12px 12px 0px 0px #000;
+      }
+
+      .transition-neo {
+        transition: all 0.2s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-yellow-100 min-h-screen">
+    <!-- Navigation -->
+    <nav
+      class="bg-pink-400 neobrutal-border neobrutal-shadow-sm sticky top-0 z-50"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-2xl font-bold text-black">
+            <i class="fas fa-code mr-2"></i>threetwoA
+          </div>
+          <div class="space-x-4">
+            <a
+              href="index.html"
+              class="bg-yellow-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2 font-bold text-black hover-lift transition-neo inline-block"
+            >
+              首页
+            </a>
+            <a
+              href="about.html"
+              class="bg-blue-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2 font-bold text-black hover-lift transition-neo inline-block"
+            >
+              关于
+            </a>
+            <a
+              href="career.html"
+              class="bg-green-300 neobrutal-border-sm neobrutal-shadow-sm px-4 py-2 font-bold text-black hover-lift transition-neo inline-block"
+            >
+              求职
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-16">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="bg-green-300 neobrutal-border neobrutal-shadow-lg p-8">
+          <h1 class="text-6xl font-black text-black mb-4 leading-tight">
+            全栈<br />程序员
+          </h1>
+          <p class="text-2xl font-bold text-black mb-6">threetwoA</p>
+          <p class="text-lg text-black mb-8">
+            专注于创造优雅且高效的数字化解决方案
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="#projects"
+              class="bg-black text-white neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+            >
+              <i class="fas fa-rocket mr-2"></i>查看作品
+            </a>
+            <a
+              href="about.html"
+              class="bg-white text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+            >
+              <i class="fas fa-user mr-2"></i>了解更多
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-purple-300 neobrutal-border neobrutal-shadow-lg p-8 text-center"
+        >
+          <div class="text-8xl mb-4">
+            <i class="fas fa-laptop-code text-black"></i>
+          </div>
+          <div class="grid grid-cols-3 gap-4 mt-8">
+            <div
+              class="bg-yellow-300 neobrutal-border-sm neobrutal-shadow-sm p-4"
+            >
+              <i class="fas fa-code text-3xl mb-2"></i>
+              <p class="font-bold text-sm">前端</p>
+            </div>
+            <div
+              class="bg-blue-300 neobrutal-border-sm neobrutal-shadow-sm p-4"
+            >
+              <i class="fas fa-server text-3xl mb-2"></i>
+              <p class="font-bold text-sm">后端</p>
+            </div>
+            <div
+              class="bg-pink-300 neobrutal-border-sm neobrutal-shadow-sm p-4"
+            >
+              <i class="fas fa-mobile-alt text-3xl mb-2"></i>
+              <p class="font-bold text-sm">移动</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container mx-auto px-6 py-16">
+      <h2 class="text-4xl font-black text-black mb-8 text-center">
+        <i class="fas fa-tools mr-3"></i>技能栈
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-cyan-300 neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-palette text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">前端开发</h3>
+          <ul class="space-y-2 text-black font-semibold">
+            <li><i class="fas fa-check mr-2"></i>React / Vue</li>
+            <li><i class="fas fa-check mr-2"></i>TypeScript</li>
+            <li><i class="fas fa-check mr-2"></i>Tailwind CSS</li>
+            <li><i class="fas fa-check mr-2"></i>Next.js</li>
+          </ul>
+        </div>
+        <div class="bg-orange-300 neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-cogs text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">后端开发</h3>
+          <ul class="space-y-2 text-black font-semibold">
+            <li><i class="fas fa-check mr-2"></i>Node.js / Python</li>
+            <li><i class="fas fa-check mr-2"></i>Express / FastAPI</li>
+            <li><i class="fas fa-check mr-2"></i>MongoDB / PostgreSQL</li>
+            <li><i class="fas fa-check mr-2"></i>RESTful API</li>
+          </ul>
+        </div>
+        <div class="bg-red-300 neobrutal-border neobrutal-shadow p-6">
+          <div class="text-4xl mb-4">
+            <i class="fas fa-cloud text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">云服务</h3>
+          <ul class="space-y-2 text-black font-semibold">
+            <li><i class="fas fa-check mr-2"></i>AWS / Azure</li>
+            <li><i class="fas fa-check mr-2"></i>Docker</li>
+            <li><i class="fas fa-check mr-2"></i>CI/CD</li>
+            <li><i class="fas fa-check mr-2"></i>微服务架构</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto px-6 py-16">
+      <h2 class="text-4xl font-black text-black mb-8 text-center">
+        <i class="fas fa-briefcase mr-3"></i>精选项目
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div
+          class="bg-white neobrutal-border neobrutal-shadow p-6 hover-lift transition-neo"
+        >
+          <div class="text-4xl mb-4">
+            <i class="fas fa-shopping-cart text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">电商平台</h3>
+          <p class="text-black mb-4">
+            全栈电商解决方案，包含用户管理、支付集成、订单处理等功能
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="bg-yellow-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >React</span
+            >
+            <span
+              class="bg-blue-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >Node.js</span
+            >
+            <span
+              class="bg-green-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >MongoDB</span
+            >
+          </div>
+        </div>
+        <div
+          class="bg-white neobrutal-border neobrutal-shadow p-6 hover-lift transition-neo"
+        >
+          <div class="text-4xl mb-4">
+            <i class="fas fa-chart-line text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">数据分析平台</h3>
+          <p class="text-black mb-4">
+            实时数据可视化平台，支持多维度数据分析和报表生成
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="bg-purple-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >Vue</span
+            >
+            <span
+              class="bg-orange-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >Python</span
+            >
+            <span
+              class="bg-cyan-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >PostgreSQL</span
+            >
+          </div>
+        </div>
+        <div
+          class="bg-white neobrutal-border neobrutal-shadow p-6 hover-lift transition-neo"
+        >
+          <div class="text-4xl mb-4">
+            <i class="fas fa-comments text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">社交应用</h3>
+          <p class="text-black mb-4">
+            实时聊天和内容分享平台，支持多媒体消息和群组功能
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="bg-pink-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >Next.js</span
+            >
+            <span
+              class="bg-red-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >Socket.io</span
+            >
+            <span
+              class="bg-yellow-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >Redis</span
+            >
+          </div>
+        </div>
+        <div
+          class="bg-white neobrutal-border neobrutal-shadow p-6 hover-lift transition-neo"
+        >
+          <div class="text-4xl mb-4">
+            <i class="fas fa-mobile-alt text-black"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-black mb-3">移动应用</h3>
+          <p class="text-black mb-4">
+            跨平台移动应用，提供流畅的用户体验和离线功能
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="bg-blue-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >React Native</span
+            >
+            <span
+              class="bg-green-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >TypeScript</span
+            >
+            <span
+              class="bg-purple-300 neobrutal-border-sm px-3 py-1 text-sm font-bold text-black"
+              >Firebase</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto px-6 py-16">
+      <div
+        class="bg-black text-white neobrutal-border neobrutal-shadow-lg p-8 text-center"
+      >
+        <h2 class="text-4xl font-black mb-6">
+          <i class="fas fa-envelope mr-3"></i>联系我
+        </h2>
+        <p class="text-xl mb-8">让我们一起创造令人惊叹的数字体验</p>
+        <div class="flex justify-center gap-6 flex-wrap">
+          <a
+            href="mailto:threetwoA@example.com"
+            class="bg-yellow-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fas fa-envelope mr-2"></i>Email
+          </a>
+          <a
+            href="https://github.com/threetwoA"
+            class="bg-green-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/threetwoA"
+            class="bg-blue-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fab fa-linkedin mr-2"></i>LinkedIn
+          </a>
+          <a
+            href="https://twitter.com/threetwoA"
+            class="bg-cyan-300 text-black neobrutal-border-sm neobrutal-shadow-sm px-6 py-3 font-bold hover-lift transition-neo inline-block"
+          >
+            <i class="fab fa-twitter mr-2"></i>Twitter
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-400 neobrutal-border-t neobrutal-shadow-sm py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-black font-bold">
+          <i class="fas fa-heart text-red-600"></i> Made with passion by
+          threetwoA
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
