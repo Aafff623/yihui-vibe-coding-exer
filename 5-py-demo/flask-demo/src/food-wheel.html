@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今天吃什么</title>
+    <style>
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        #wheelCanvas {
+            margin: 20px auto;
+            display: block;
+        }
+        
+        #spinButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #spinButton:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>今天吃什么</h1>
+        <canvas id="wheelCanvas" width="400" height="400"></canvas>
+        <br>
+        <button id="spinButton">开始</button>
+    </div>
+    <script src="wheel.js"></script>
+</body>
+</html> 
