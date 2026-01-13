@@ -33,7 +33,8 @@ export default function Home() {
             </h1>
           </div>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            这是一个基于 Next.js 构建的现代化网站，包含博客、关于等页面。探索我们的内容，了解更多信息。
+            这是一个基于 Next.js
+            构建的现代化网站，包含博客、关于等页面。探索我们的内容，了解更多信息。
           </p>
         </div>
         <div className="flex w-full flex-col gap-4 text-base font-medium sm:flex-row sm:justify-start">

@@ -4,13 +4,18 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-zinc-50 via-blue-50/30 to-purple-50/30 font-sans dark:from-black dark:via-zinc-900 dark:to-zinc-800">
-      <main className="container mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <main className="mx-auto w-3/4 px-4 py-20 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
           <h1 className="mb-4 text-4xl font-bold leading-tight tracking-tight text-black dark:text-zinc-50 sm:text-5xl">
-            关于 Next.js 和 Nuxt.js
+            关于 Nex并且通过获取服务端mock数据的方式获取博客列表。组件放到t.js
+            和 Nuxt.js
           </h1>
           <p className="text-lg text-zinc-600 dark:text-zinc-400">
-            由 <span className="font-semibold text-blue-600 dark:text-blue-400">threetwoa</span> 整理
+            由{" "}
+            <span className="font-semibold text-blue-600 dark:text-blue-400">
+              threetwoa
+            </span>{" "}
+            整理
           </p>
         </div>
 
@@ -34,7 +39,9 @@ export default function About() {
             </div>
             <div className="space-y-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
               <p>
-                <strong className="text-black dark:text-zinc-50">Next.js</strong>{" "}
+                <strong className="text-black dark:text-zinc-50">
+                  Next.js
+                </strong>{" "}
                 是由 Vercel 开发的基于 React 的全栈框架，专为生产环境优化。
               </p>
               <div>
@@ -47,7 +54,8 @@ export default function About() {
                     组件，提升首屏加载速度和 SEO
                   </li>
                   <li className="list-disc">
-                    <strong>静态站点生成 (SSG)</strong>：在构建时预渲染页面，适合内容相对静态的网站
+                    <strong>静态站点生成 (SSG)</strong>
+                    ：在构建时预渲染页面，适合内容相对静态的网站
                   </li>
                   <li className="list-disc">
                     <strong>增量静态再生 (ISR)</strong>：结合 SSG 和 SSR
@@ -58,15 +66,14 @@ export default function About() {
                     API 端点
                   </li>
                   <li className="list-disc">
-                    <strong>文件系统路由</strong>：基于文件系统的路由，自动生成路由
+                    <strong>文件系统路由</strong>
+                    ：基于文件系统的路由，自动生成路由
                   </li>
                   <li className="list-disc">
-                    <strong>图像优化</strong>：内置 Image
-                    组件，自动优化图片加载
+                    <strong>图像优化</strong>：内置 Image 组件，自动优化图片加载
                   </li>
                   <li className="list-disc">
-                    <strong>TypeScript 支持</strong>：开箱即用的 TypeScript
-                    支持
+                    <strong>TypeScript 支持</strong>：开箱即用的 TypeScript 支持
                   </li>
                 </ul>
               </div>
@@ -89,7 +96,9 @@ export default function About() {
             </div>
             <div className="space-y-4 text-base leading-7 text-zinc-600 dark:text-zinc-400">
               <p>
-                <strong className="text-black dark:text-zinc-50">Nuxt.js</strong>{" "}
+                <strong className="text-black dark:text-zinc-50">
+                  Nuxt.js
+                </strong>{" "}
                 是基于 Vue.js 的元框架，旨在简化 Vue
                 应用的开发，提供开箱即用的最佳实践。
               </p>
@@ -103,16 +112,20 @@ export default function About() {
                     组件的服务端渲染，提升性能和 SEO
                   </li>
                   <li className="list-disc">
-                    <strong>静态站点生成 (SSG)</strong>：可以生成完全静态的网站，部署到任何静态托管服务
+                    <strong>静态站点生成 (SSG)</strong>
+                    ：可以生成完全静态的网站，部署到任何静态托管服务
                   </li>
                   <li className="list-disc">
-                    <strong>自动代码分割</strong>：智能的代码分割，按需加载组件和页面
+                    <strong>自动代码分割</strong>
+                    ：智能的代码分割，按需加载组件和页面
                   </li>
                   <li className="list-disc">
-                    <strong>约定优于配置</strong>：基于文件系统的路由、布局和中间件，减少配置工作
+                    <strong>约定优于配置</strong>
+                    ：基于文件系统的路由、布局和中间件，减少配置工作
                   </li>
                   <li className="list-disc">
-                    <strong>模块系统</strong>：丰富的模块生态系统，轻松集成各种功能
+                    <strong>模块系统</strong>
+                    ：丰富的模块生态系统，轻松集成各种功能
                   </li>
                   <li className="list-disc">
                     <strong>TypeScript 支持</strong>：完整的 TypeScript
@@ -140,23 +153,37 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-lg leading-8 text-zinc-700 dark:text-zinc-300">
               <p>
-                <strong className="text-black dark:text-zinc-50">Next.js</strong> 和{" "}
-                <strong className="text-black dark:text-zinc-50">Nuxt.js</strong>{" "}
-                都是优秀的全栈框架，它们各自基于不同的前端库（React 和 Vue.js），但都提供了相似的功能和开发体验。
+                <strong className="text-black dark:text-zinc-50">
+                  Next.js
+                </strong>{" "}
+                和{" "}
+                <strong className="text-black dark:text-zinc-50">
+                  Nuxt.js
+                </strong>{" "}
+                都是优秀的全栈框架，它们各自基于不同的前端库（React 和
+                Vue.js），但都提供了相似的功能和开发体验。
               </p>
               <p>
                 选择哪个框架主要取决于你的技术栈偏好：如果你熟悉{" "}
-                <strong className="text-blue-600 dark:text-blue-400">React</strong>，Next.js
-                会是更自然的选择；如果你熟悉{" "}
-                <strong className="text-emerald-600 dark:text-emerald-400">Vue.js</strong>，Nuxt.js
-                则更适合你。
+                <strong className="text-blue-600 dark:text-blue-400">
+                  React
+                </strong>
+                ，Next.js 会是更自然的选择；如果你熟悉{" "}
+                <strong className="text-emerald-600 dark:text-emerald-400">
+                  Vue.js
+                </strong>
+                ，Nuxt.js 则更适合你。
               </p>
               <p>
-                两者都提供了出色的开发体验、强大的性能优化和丰富的生态系统。无论选择哪个，都能帮助你构建现代化的、高性能的 Web 应用。
+                两者都提供了出色的开发体验、强大的性能优化和丰富的生态系统。无论选择哪个，都能帮助你构建现代化的、高性能的
+                Web 应用。
               </p>
               <div className="mt-8 pt-6 border-t border-zinc-300 dark:border-zinc-700">
                 <p className="text-base text-zinc-600 dark:text-zinc-400">
-                  — <span className="font-semibold text-blue-600 dark:text-blue-400">threetwoa</span>
+                  —{" "}
+                  <span className="font-semibold text-blue-600 dark:text-blue-400">
+                    threetwoa
+                  </span>
                 </p>
               </div>
             </div>
