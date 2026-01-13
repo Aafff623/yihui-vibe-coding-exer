@@ -12,11 +12,19 @@ export async function POST(request: Request) {
     );
   }
 
+  // 类型检查：确保是 File 类型而不是 string
+  if (typeof file === "string") {
+    return Response.json(
+      { error: "无效的文件类型" },
+      { status: 400 }
+    );
+  }
+
   const bytes = await file.arrayBuffer();
   const buffer = Buffer.from(bytes);
 
   // 确保文件名唯一
-  const fileName = `${Date.now()}-${(file as File).name}`;
+  const fileName = `${Date.now()}-${file.name}`;
   const path = join(process.cwd(), "public", "uploads", fileName);
 
   try {
